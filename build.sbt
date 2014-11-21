@@ -1,4 +1,4 @@
-name := "cluster-node-1"
+name := "cluster-node-2"
 
 version := "1.0"
 
