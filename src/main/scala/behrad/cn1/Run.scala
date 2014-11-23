@@ -29,7 +29,7 @@ class Run extends Bootable {
     cluster.down(cluster.selfAddress)
     cluster.leave(cluster.selfAddress)
     system.shutdown()
-    Thread.sleep( 5000 )
+    Thread.sleep( 2000 )
   }
 
 }
@@ -39,6 +39,8 @@ object Run extends App {
   override def main(args: Array[String]): Unit = {
     val run = new Run
     run startup()
+    //Thread.sleep( 5000 )
+    //run shutdown()
     /*sys.ShutdownHookThread {
       println( "++++++++++++++++++++++++++++++++ Exiting" )
       run shutdown()
